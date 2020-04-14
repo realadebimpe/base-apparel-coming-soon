@@ -1,4 +1,4 @@
-@import url(https://fonts.google.com/specimen/Josefin+Sans);
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,500,600&display=swap');
 
 :root {
     /* Primary */
@@ -20,49 +20,45 @@
 
     --Font-size: 16px;
 
-    /* Font */
-    --Font-family: "Josefin Sans";
-
 }
 
 
 body {
     padding: 0;
     margin: 0;
-    font: var(--font-size);
+    font-family:'Josefin Sans', sans-serif;
 }
 
 .wrapper {
-    width: 375px;
+    max-width: 375px;
     height: 800px;
-    background-image: var(--linear-one)no repeat;
+    background-image: var(--linear-one);
 }
 
 .logo {
-    position: absolute;
-    left: 8.91%;
-    right: 65.07%;
-    top: 3.99%;
     bottom: 93.58%;
+    margin: 30px 0 30px 32px;
 }
 
 img {
-    width: 375px;
+    max-width: 375px;
     height: 250px;
-    left: 0px;
-    margin-top: 84px;
 }
 
-
- /* .text { 
-    text-align: center;
-} */
 
 .first {
     font-size: 42px;
     font-weight: 300;
     color: var(--Red);
     text-align: center;
+}
+
+.inline{
+    display: block;
+    font-weight: bolder;
+    color: var(--Dark-Grayish-Red);
+    width: 232px;
+    margin: 0 auto;
 }
 
 .second {
@@ -77,41 +73,53 @@ img {
     letter-spacing: 0.22em;
 }
 
-.text p{
+
+.third {
+    width:296px;
+    height:88px;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 22px;
-    font-family: var(--Font-family);
     text-align: center;
     color: var(--Red);
+    margin: 0 auto;
 }
 
-input{
-width: 248px;
-height: 48px;
-margin-left: 32px;
-top: 660px;
-border-color: var(--Red);
-padding: 5px;
-box-sizing: border-box;
-border-right-width: 0;
-border-radius: 22px 0 0 22px;
+form{
+    position: relative;
 }
 
-/* placeholder{
-    color: var(--Red);
-} */
+
+input[type="text"]{
+    width: 248px;
+    height: 48px;
+    margin-left: 32px;
+    top: 660px;
+    padding: 18px;
+    box-sizing: border-box;
+    border-radius: 22px 0 0 22px;
+    background-color: transparent;
+    margin-right: 0;
+    border:2px solid var(--Red);
+    border-right-width: 0;
+    outline-style: none;
+    outline-width: 0;
+
+}
 
 
- button{
+button {
     display: inline-block;
     background-image: var(--linear-two);
     padding: 10px;
     border-radius: 18px;
     width: 60px;
-    height: 44px;
+    height: 48px;
     margin: 0;
     text-align: center;
-
-} 
- 
+    box-sizing: border-box;
+    border-width: 0;
+    position: absolute;
+    left: 248px;
+    top: 0;
+}
