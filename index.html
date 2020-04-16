@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Base-apparel-comig-soon</title>
     <link rel="stylesheet" href="/css/style.css">
+    
 </head>
 
 <body>
@@ -43,22 +44,34 @@
                     up-to-date with announcements and our launch deals.</p>
             </div>
 
-            <form action="">
-                <input type="text" placeholder="Email Address" name="Email" required>
+            <form action="#" class="form" id="form">
+                <input type="email" aria-labelledby="form" placeholder="Email Address" name="email">
+                <img class="icon-error" src="/images/icon-error.svg" alt="error">
                 <button type="submit">
                     <svg xmlns="http://www.w3.org/2000/svg" class="arrow" width="12" height="20">
                         <path fill="none" stroke="#FFF" stroke-width="2" d="M1 1l8.836 8.836L1 18.671" /></svg>
                 </button>
+                <small>Please provide a valid email</small>
             </form>
 
+            
         </section>
 
         <section class="hero-desktop">
             <img src="/images/hero-desktop.jpg" class="hero-desktop-img" alt="">
         </section>
 
+        <!--<footer>
+            <p class="attribution">
+              Challenge by <a href="https://www.github.com" target="_blank">Github</a>. 
+              Coded by <a href="#">Adebimpe</a>.
+            </p>
+          </footer>-->
+
 
     </div>
+
+    <script src="/js/test.js"></script>
 
 </body>
 
