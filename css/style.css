@@ -30,7 +30,7 @@ body {
 }
 
 .mini {
-    height: 800px;
+    /* height: 800px; */
     background-image: var(--linear-one);
 }
 
@@ -61,15 +61,12 @@ body {
     display: block;
     font-weight: bolder;
     color: var(--Dark-Grayish-Red);
-    width: 232px;
     margin: 0 auto;
 }
 
 .second {
     font-size: 42px;
     font-weight: 600;
-    width: 232px;
-    height: 84px;
     margin-left: 65px;
     line-height: 42px;
     color: var(--Dark-Grayish-Red);
@@ -79,8 +76,7 @@ body {
 
 
 .third {
-    width:296px;
-    height:88px;
+    width: 80%;
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
@@ -95,20 +91,13 @@ form{
 
 
 input[type="email"]{
-    width: 300px;
-    height: 48px;
     margin: 33px 0 0 32px;
-    top: 660px;
-    padding: 18px;
+    padding: 14px;
     box-sizing: border-box;
     border-radius: 22px 0 0 22px;
     background-color: transparent;
-    margin-right: 0;
     border:2px solid var(--Red);
     border-right-width: 0;
-    outline-style: none;
-    outline-width: 0;
-
 }
 
 
@@ -117,18 +106,14 @@ button {
     background-image: var(--linear-two);
     padding: 10px;
     border-radius: 18px;
-    width: 63px;
-    height: 48px ;
-    margin: 0;
     text-align: center;
     box-sizing: border-box;
     border-width: 0;
     position: absolute;
-    left: 290px;
     top: 33px;
 }
 
-@media screen and (min-width:1440px){
+@media screen and (min-width:1024px){
     body{
         display: flex;
         justify-content: center;
@@ -142,42 +127,33 @@ button {
     }
 
     .mini{
-        width: 830px;
         background:url(./images/bg-pattern-desktop.svg), var(--linear-one);
-        /* display:flex;
-        justify-content: center; */
-        padding-left: 165px;
+        padding: 0 30px;
+        flex-basis: 60%;
     }
 
     .first{
         text-align: left;
         font-size: 64px;
-        width: 266px;
 
     }
 
     .inline{
         margin: 0;
         font-size: 64px;
-        width: 386px;
     }
 
     .third{
         margin: 0;
         font-size: 16px;
         text-align: left;
-        width: 426px;
-        height: 80px;
     }
 
     input[type="text"]{
         margin-left: 0;
-        width: 444px;
-        margin-top: 48px;
     }
   
     button{
-        width: 99px;
         left: 400px;
         margin-top: 14px;
     }
