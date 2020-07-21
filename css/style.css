@@ -128,7 +128,7 @@ button {
 
     .mini{
         background:url(./images/bg-pattern-desktop.svg), var(--linear-one);
-        padding: 0 30px;
+        padding: 60px 40px;
         flex-basis: 60%;
     }
 
