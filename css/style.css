@@ -27,11 +27,13 @@ body {
     padding: 0;
     margin: 0;
     font-family:'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+    
 }
 
 .mini {
-    /* height: 800px; */
     background-image: var(--linear-one);
+    padding: 10% 0;
 }
 
 .logo {
@@ -94,12 +96,18 @@ input[type="email"]{
     margin: 33px 0 0 32px;
     padding: 14px;
     box-sizing: border-box;
-    border-radius: 22px 0 0 22px;
+    border-radius: 22px;
     background-color: transparent;
     border:2px solid var(--Red);
-    border-right-width: 0;
+    width: 80%;
+    /* border-right-width: 0; */
 }
 
+.icon-error{
+    position: absolute;
+    right: 25%;
+    bottom: 30%;
+}
 
 button {
     display: inline-block;
@@ -110,7 +118,40 @@ button {
     box-sizing: border-box;
     border-width: 0;
     position: absolute;
-    top: 33px;
+    top: 35%;
+    right: 12%;
+}
+ 
+small {
+    color: var(--Red);
+    left: 12%;
+    position: relative;
+}
+
+@media screen and (min-width: 425px) {
+    /* .icon-error{
+        position: absolute;
+        right: 25%;
+        bottom: 30%;
+    } */
+}
+
+@media screen and (min-width: 768px) {
+    button {
+        right: 6%;
+    }
+
+    input[type="email"]{
+        width: 90%;
+    }
+
+    .icon-error{
+        right: 15%;
+    }
+
+    small {
+        left: 5%;
+    }
 }
 
 @media screen and (min-width:1024px){
@@ -123,12 +164,12 @@ button {
     }
 
     .logo{
-        margin: 65px 0 0 0;
+        margin: 5% 0 8% 0;
     }
 
     .mini{
         background:url(./images/bg-pattern-desktop.svg), var(--linear-one);
-        padding: 60px 40px;
+        padding: 60px;
         flex-basis: 60%;
     }
 
@@ -149,13 +190,19 @@ button {
         text-align: left;
     }
 
-    input[type="text"]{
+    input[type="email"]{
         margin-left: 0;
+        
+    }
+
+    .icon-error{
+        right: 25%;
     }
   
     button{
-        left: 400px;
-        margin-top: 14px;
+        position: absolute;
+        right: 10%;
+        margin-top: 0%;
     }
 
     .hero-mobile{
@@ -164,5 +211,22 @@ button {
 
     .hero-desktop{
         display: block;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .third{
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .icon-error{
+        right: 20%;
+    }
+
+    small {
+        font-size: 18px;
+        left: 0;
     }
 }
