@@ -43,15 +43,16 @@
                     below to stay
                     up-to-date with announcements and our launch deals.</p>
             </div>
-
+            
+            <!-- form -->
             <form action="#" class="form" id="form">
-                <input type="email" aria-labelledby="form" placeholder="Email Address" name="email">
-                <img class="icon-error" src="/images/icon-error.svg" alt="error">
-                <button type="submit">
+                <input type="email" aria-labelledby="form" placeholder="Email Address" name="email" id="email">
+                <img class="icon-error" src="/images/icon-error.svg" alt="error" id="error">
+                <button type="submit" id="submit">
                     <svg xmlns="http://www.w3.org/2000/svg" class="arrow" width="12" height="20">
                         <path fill="none" stroke="#FFF" stroke-width="2" d="M1 1l8.836 8.836L1 18.671" /></svg>
                 </button>
-                <small>Please provide a valid email</small>
+                <small id="error">Please provide a valid email</small>
             </form>
 
             
@@ -71,7 +72,7 @@
 
     </div>
 
-    <script src="/js/test.js"></script>
+    <script src="./js/test.js"></script>
 
 </body>
 

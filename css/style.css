@@ -100,6 +100,7 @@ input[type="email"]{
     background-color: transparent;
     border:2px solid var(--Red);
     width: 80%;
+    outline: none;
     /* border-right-width: 0; */
 }
 
@@ -107,6 +108,7 @@ input[type="email"]{
     position: absolute;
     right: 25%;
     bottom: 30%;
+    /* visibility: hidden; */
 }
 
 button {
@@ -120,12 +122,15 @@ button {
     position: absolute;
     top: 35%;
     right: 12%;
+    outline: none;
+    cursor: pointer;
 }
  
 small {
     color: var(--Red);
     left: 12%;
     position: relative;
+    /* visibility: hidden; */
 }
 
 @media screen and (min-width: 425px) {
@@ -158,6 +163,7 @@ small {
     body{
         display: flex;
         justify-content: center;
+        
     }
     .wrapper{
         display: flex;
@@ -171,6 +177,7 @@ small {
         background:url(./images/bg-pattern-desktop.svg), var(--linear-one);
         padding: 60px;
         flex-basis: 60%;
+
     }
 
     .first{
